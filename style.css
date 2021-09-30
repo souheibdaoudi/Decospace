@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+.p2{
+    color:#706861 ;
+    font-family: Montserrat;
+}
+.p1{
+    color:#412307 ;
+    font-family: Montserrat;
+}
+.p3{
+    color:#5a2e05 ;
+    font-family: Montserrat;
+}
+.p4{
+    color:#815429;
+    font-family: Montserrat;
+}
+.p5{
+    color:#706861 ;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+.p6{
+    color:#5a2e05 ;
+    font-family: Montserrat;
+    text-decoration: none;
+}
+.p5:hover {
+    color:#5a2e05 ;
+    
+}
+.p6:hover {
+    color:#5a2e05 ;
+    
+}
+.bg1{
+    background-image:url(image/interior-wall-mockup-with-sofa-cabinet-living-room-with-empty-white-wall-background-3d-rendering.jpg); 
+    background-size:cover;
+    
+}
+.bg2{
+   background-image: url(image/living-room-interior-wall-warm-tones-with-yellow-armchair-white-wall-3d-rendering.jpg);
+   background-size: cover;
+   
+}
+.bg3{
+    background-image: url(image/japandi-dining-room-interior-design-with-wooden-table.jpg);
+    background-size: cover;
+    
+}
+.rw1{
+   height: 530px;
+} 
+
+
+
+
+@media (max-width: 575.98px) { 
+  
+    .bg1{
+        height: 530px;
+        
+     } 
+     .bg2{
+        height: 530px;
+     } 
+     .bg3{
+        height: 530px;
+     } 
+ }
+
+ @media (max-width: 767.98px) { 
+    .bg1{
+        height: 530px;
+       
+     } 
+     .bg2{
+        height: 530px;
+     } 
+     .bg3{
+        height: 530px;
+     } 
+ }
+
+ @media (max-width:991.98px) {
+    .bg1{
+        height: 530px;
+       
+     } 
+     .bg2{
+        height: 530px;
+     } 
+     .bg3{
+        height: 530px;
+     } 
+ }
+ @media (max-width: 1199.98px) { 
+    .bg1{
+        height: 530px;
+        
+     } 
+     .bg2{
+        height: 530px;
+     } 
+     .bg3{
+        height: 530px;
+     } 
+  }
+#s2-Modal .model-img{
+  width: 100%;
+}
+
+
+

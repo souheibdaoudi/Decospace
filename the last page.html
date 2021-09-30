@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="the last page.css">
+    <script src="https://kit.fontawesome.com/32e23e498c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        .col-md-2 {
+
+border-radius: 20px;
+height: 15vw;
+background-color: #d9c9ba;
+}
+
+.container-fluid h1 {
+text-align: center;
+}
+
+.col-md-2:hover .icons {
+
+opacity: 1;
+}
+
+.icons .far,
+.icons .fas {
+position: absolute;
+background-color: white;
+padding: 5px;
+border-radius: 25px;
+left: 85%;
+top: 50%;
+
+}
+
+.icons .fas {
+top: 65%;
+}
+
+
+
+
+.col-md-2 .h61 {
+background-color: green;
+width: fit-content;
+color: white;
+padding: 5px;
+border-radius: 0 0 15px;
+
+}
+.col-md-2 .h63{
+background-color: red;
+width: fit-content;
+color: white;
+padding: 5px;
+border-radius: 0 0 15px;
+}
+.col-md-2 img {
+width: 12vw;
+height: 10vw;
+}
+
+.col-md-2 .h62 {
+background-color: blue;
+width: fit-content;
+color: white;
+padding: 5px;
+border-radius: 0 0 15px;
+}
+
+.col-md-2 .disc {
+margin-top: 1vh;
+}
+
+#row1 {
+margin-top: 3vh;
+}
+
+.list-inline {
+font-size: 2em;
+text-align: center;
+}
+
+.list-inline:active {
+color: green;
+}
+.icon-menu{ 
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+@media only screen and (max-width:780px) {
+.col-md-2 {
+    margin-bottom: 30vw;
+    width: 50vw;
+    height: 30vh;
+}
+
+.col-md-2 img {
+    width: 30vw;
+}
+
+}
+</style>
+</head>
+
+<body id="body">
+    <div class="pt-lg-5 pt-sm-0 px-lg-5 px-lg-0  ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container-fluid p-0 mx-5">
+
+                <a class="navbar-brand fw-bolder logo" href="index.html#" style="color: rgb(73, 45, 10);"> DecoSpace</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <div class="col ps-lg-5 ps-0 pt-3 pt-lg-1  ">
+                                <form class="d-flex input-group w-auto mx-0 p-0">
+                                    <span class="input-group-text border-end-0 bg-light" id="search-addon">
+                    <a href="#inp"><i class="bi bi-search bg-opacity-10 "></i></a>
+                  </span>
+                                    <input id="inp" type="search" class="form-control border-start-0" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                                </form>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <!--bell de notifications-->
+                    <div class=" pe-lg-5   pt-2 ">
+                        <div class="dropdown p-0  ">
+                            <button class="btn p-0 position-relative " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-bell-fill"></i>
+                         <span class="position-absolute  p-0 top-0 start-100 translate-middle p-1 bg border border-light rounded-circle badge ">
+                          <div class="nbr overflow-visible">5</div>
+                         </span>
+                         
+                       </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <p class="text-muted">Our news</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <p class="text-muted">your fav sofa is in stock</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <p class="text-muted">Djo like your comment </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <!--dropdown prfile-->
+                    <div class="dropdown px-3 ms-3 align-content-center">
+                        <a class="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="position-absolute top-50 start-0 translate-middle p-1 bg1 border border-light rounded-circle badge ">
+                  <img src="photos/user-img.jpg" class="rounded-circle" height="25" loading="lazy" />
+                 </span>
+                            <div class="p-2 fw-bolder"> Hi,Sarah <i class="bi bi-caret-down-fill" style="color: black;"></i></div>
+
+
+                        </a>
+
+                        <ul class="dropdown-menu list-group-flush bg-light" aria-labelledby="dropdownMenuLink">
+                            <li class="list-group-item list-group-item-action bg-light my-1 "> <i class="bi bi-person-circle me-4" style="color: rgb(110, 89, 63);"></i> <a href="indexp.html" class="text-decoration-none" style="color: rgb(110, 89, 63);"> Profile</a> </li>
+                            <li class=" list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-heart-fill me-4" style="color: rgb(110, 89, 63);"></i> <a href="index.html" class="text-decoration-none" style="color: rgb(110, 89, 63);">Favorite</a> </li>
+                            <li class="list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-handbag-fill me-3" style="color: rgb(110, 89, 63);"></i> <a href="#" class="text-decoration-none" style="color: rgb(110, 89, 63);"> Purchases</a> </li>
+
+                            <li class="list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-gear-wide-connected me-4" style="color: rgb(110, 89, 63);"></i> <a href="indexs.html" class="text-decoration-none" style="color: rgb(110, 89, 63);"> Settings</a></li>
+                            <li class="list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-box-arrow-right me-4" style="color: rgb(110, 89, 63);"></i> <a href="#" class="text-decoration-none" style="color: rgb(110, 89, 63);"> logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="categories">
+        <div class="categories-content">
+            <div class="title-bar">
+               
+                
+                <div class="icon-menu" onclick="showmenu()"><i class="fas fa-shopping-cart"></i></div>
+            </div>
+            <div class="content-box">
+                <h1>Confirm & Pay</h1>
+                <div class="list-content" id="list-content">
+                </div>
+            </div>
+        </div>
+        <div class="draw-bar">
+
+        </div>
+        <div class="categories-information">
+            <div class="icon-home">
+                <a href="#"><i class="fas fa-home"></i></a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Geust checkout</h3>
+                    <img src="email.png" class="img-1">
+                    <span><i class="far fa-user"></i><span id="email"> adek@acme.com</span></span>
+                </li>
+                <li>
+                    <h3>Shipping information</h3>
+                    <span><img src="user.png">adel Burek</span><br>
+                    <span><img src="placeholder.png">Ain smara ,Constantine</span><br>
+                    <span><img src="telephone.png">0745455465445646</span>
+                </li>
+                <li>
+                    <h3>Payment</h3>
+                    <span><img src="credit-card.png" class="img-1">08562 125
+                        551</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>12</span><span>/</span><span>5</span><br>
+                    <span><img src="check.png" class="img-1">Use shipping address</span>
+                </li>
+                <div class="calc-TotalPrice">
+                    <h5>Subtotal</h5><span id="Subtotal_1">1205$</span><br>
+                    <h5>Taxes:</h5><span id="Taxes_1">50$</span><br>
+                    <h3>Total price</h3><span id="total-price_1">1255$</span><br>
+                    <button>PLACE YOUR ORDER</button>
+                </div>
+            </ul>
+        </div>
+        <!--this is the menu in screen phone (small screen(width<1000px||height<700px))-->
+        <div class="categories-information" id="categories-information">
+            <div class="icon" onclick="closemenu()" id="icon-close">
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="icon-home">
+                <a href="#"><i class="fas fa-home"></i></a>
+            </div>
+            <ul>
+                <li>
+                    <h3>Geust checkout</h3>
+                    <span><i style="font-size: 25px;" class="far fa-user"></i><span id="email-t">  </span></span>
+                </li>
+                <li>
+                    <h3>Shipping information</h3>
+                    <span><i style="font-size: 25px;" class="far fa-user"></i> <label for="name"><b>Full name</b></label>
+                        <input style="border-radius: 10px; border: none;  margin-left: 10px;" type="text" placeholder="Enter name" name="email" required></span><br>
+                    <span><i style="font-size: 25px;" class="fas fa-location-arrow"></i> <label for="location"><b>Location</b></label>
+                        <input style="border-radius: 10px; border: none;  margin-left: 10px;"type="text" placeholder="Enter Location" name="email" required></span><br>
+                    <span><i style="font-size: 25px;" class="fas fa-phone"></i> <label for="phone "><b>phone number</b></label>
+                        <input style="border-radius: 10px; border: none;  margin-left: 10px;" type="text" placeholder="Enter phone number" name="phone" required></span>
+                </li>
+                <li>
+                    <h3>Payment</h3>
+                    <span><i style="font-size: 25px;" class="fas fa-credit-card"></i> <label for="email"><b>Credit card</b></label>
+                        <input style="border-radius: 10px;; border: none;  margin-left: 10px;" type="text" placeholder="credit card " name="cerdit card" required></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>12</span><span>/</span><span>5</span><br>
+                    <span><i  style="font-size: 25px;" class="fas fa-search-location"></i><label for="email"><b>shipping location</b></label>
+                        <input style="border-radius: 10px; border: none;  margin-left: 10px;" type="text" placeholder="shipping location" name="email" required></span>
+                </li>
+                <div class="calc-TotalPrice">
+                    <h4>Subtotal</h4><span id="Subtotal">1205$</span><br>
+                    <h5>Taxes:</h5><span id="Taxes">50$</span><br>
+                    <h3>Total price</h3><span id="total-price">1255$</span><br>
+                    <button>PLACE YOUR ORDER</button>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!--this script is about menu function-->
+    <script>
+        var show = document.getElementById("categories-information");
+        var scroll_stop = document.getElementById("body");
+        var icon = document.getElementById("icon-close");
+
+        function showmenu() {
+            show.style.right = "0";
+        }
+
+        function closemenu() {
+            show.style.right = "-100%";
+        }
+    </script>
+    <!-- this script for adding -->
+    <script>
+        const listElement = [];
+        const listbtn_R = [];
+        for (let index = 0; index < localStorage.getItem("length"); index++) {
+            listElement[index] = null;
+            listbtn_R[index] = null;
+        }
+        var Subtotal = 0;
+        for (let index = 0; index < localStorage.getItem("length"); index++) {
+            if (index == localStorage.getItem(index)) {
+                const newElement = document.createElement("div");
+                newElement.classList.add('element');
+                listElement[index] = newElement;
+                const newImg = document.createElement("div");
+                const Img = document.createElement("img");
+                newImg.classList.add('img');
+                Img.src = localStorage.getItem("ImgS" + index);
+                const btn = document.createElement("button");
+                listbtn_R[index] = btn;
+                const Icon = document.createElement("i");
+                Icon.classList.add('fas');
+                Icon.classList.add('fa-trash-alt');
+                const btnText = document.createTextNode('Romove');
+                const titleH5 = document.createElement('h5');
+                const titleH5Texte = document.createTextNode(localStorage.getItem("Type" + index));
+                const titleH6 = document.createElement('h6');
+                const titleH6Texte = document.createTextNode(localStorage.getItem("SType" + index));
+                const spanNewPrice = document.createElement('span');
+                spanNewPrice.id = 'newPrice';
+                const spanNewPriceT = document.createTextNode(localStorage.getItem("NewP" + index));
+                const spanOldPrice = document.createElement('span');
+                const spanOldPriceT = document.createTextNode(localStorage.getItem("OldP" + index));
+                spanOldPrice.id = 'oldPrice';
+
+                document.getElementById("list-content").appendChild(newElement);
+                newElement.appendChild(newImg);
+                newElement.appendChild(titleH5);
+                newElement.appendChild(titleH6);
+                newElement.appendChild(spanNewPrice);
+                newElement.appendChild(spanOldPrice);
+                /* img*/
+                newImg.appendChild(Img);
+                newImg.appendChild(btn);
+                /* btn */
+                btn.appendChild(Icon);
+                btn.appendChild(btnText);
+                /*btn end */
+                /*img end */
+                /*titleH5*/
+                titleH5.appendChild(titleH5Texte);
+                /*titleH5 end */
+                /*titleH6 */
+                titleH6.appendChild(titleH6Texte);
+                /*titleH6 end */
+                /*spanNewPrice */
+                spanNewPrice.appendChild(spanNewPriceT);
+                /*spanNewPrice end */
+                /*spanOldPrice */
+                spanOldPrice.appendChild(spanOldPriceT);
+                /*spanOldPrice end*/
+                ;
+                const newPrice = parseInt(spanNewPrice.innerText)
+                Subtotal += newPrice;
+            }
+        }
+        for (let index = 0; index < localStorage.getItem("length"); index++) {
+            if (listbtn_R[index] != null) {
+                listbtn_R[index].addEventListener("click", Remove);
+
+                function Remove() {
+                    const spanNewPrice = document.getElementById("newPrice");
+                    const newPrice = parseInt(spanNewPrice.innerText);
+                    Subtotal -= newPrice;
+                    document.getElementById("list-content").removeChild(listElement[index]);
+                    localStorage.removeItem(index);
+                    localStorage.setItem("Remove" + index, index);
+                    document.getElementById("Subtotal").innerHTML = Subtotal + "$";
+                    document.getElementById("Taxes").innerHTML = (0.15 * Subtotal) + "$";
+                    document.getElementById("total-price").innerHTML = (Subtotal + (0.15 * Subtotal)) + "$";
+                    document.getElementById("Subtotal_1").innerHTML = Subtotal + "$";
+                    document.getElementById("Taxes_1").innerHTML = (0.15 * Subtotal) + "$";
+                    document.getElementById("total-price_1").innerHTML = (Subtotal + (0.15 * Subtotal)) + "$";
+                }
+            }
+        }
+
+        document.getElementById("Subtotal").innerHTML = Subtotal + "$";
+        document.getElementById("Taxes").innerHTML = (0.15 * Subtotal) + "$";
+        document.getElementById("total-price").innerHTML = (Subtotal + (0.15 * Subtotal)) + "$";
+        document.getElementById("Subtotal_1").innerHTML = Subtotal + "$";
+        document.getElementById("Taxes_1").innerHTML = (0.15 * Subtotal) + "$";
+        document.getElementById("total-price_1").innerHTML = (Subtotal + (0.15 * Subtotal)) + "$";
+    </script>
+    <script>
+        document.getElementById("email").innerHTML = localStorage.getItem("email");
+        document.getElementById("email-t").innerHTML = localStorage.getItem("email");
+
+    </script>
+</body>
+
+</html>

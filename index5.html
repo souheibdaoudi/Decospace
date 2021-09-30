@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Decospace-Profile</title>
+</head>
+<style>
+  .col-md-2 {
+
+      border-radius: 20px;
+      height: 15vw;
+      background-color: #d9c9ba;
+  }
+
+  .container-fluid h1 {
+      text-align: center;
+  }
+
+  .col-md-2:hover .icons {
+
+      opacity: 1;
+  }
+
+  .icons .far,
+  .icons .fas {
+      position: absolute;
+      background-color: white;
+      padding: 5px;
+      border-radius: 25px;
+      left: 85%;
+      top: 50%;
+
+  }
+
+  .icons .fas {
+      top: 65%;
+  }
+
+  
+
+
+  .col-md-2 .h61 {
+      background-color: green;
+      width: fit-content;
+      color: white;
+      padding: 5px;
+      border-radius: 0 0 15px;
+
+  }
+  .col-md-2 .h63{
+      background-color: red;
+      width: fit-content;
+      color: white;
+      padding: 5px;
+      border-radius: 0 0 15px;
+  }
+  .col-md-2 img {
+      width: 12vw;
+      height: 10vw;
+  }
+
+  .col-md-2 .h62 {
+      background-color: blue;
+      width: fit-content;
+      color: white;
+      padding: 5px;
+      border-radius: 0 0 15px;
+  }
+
+  .col-md-2 .disc {
+      margin-top: 1vh;
+  }
+
+  #row1 {
+      margin-top: 3vh;
+  }
+
+  .list-inline {
+      font-size: 2em;
+      text-align: center;
+  }
+
+  .list-inline:active {
+      color: green;
+  }
+
+  @media only screen and (max-width:780px) {
+      .col-md-2 {
+          margin-bottom: 30vw;
+          width: 50vw;
+          height: 30vh;
+      }
+
+      .col-md-2 img {
+          width: 30vw;
+      }
+
+  }
+</style>
+<body >
+    <body>
+        <div class="pt-lg-5 pt-sm-0 px-lg-5 px-lg-0  ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+                <div class="container-fluid p-0 mx-5">
+    
+                    <a class="navbar-brand fw-bolder logo" href="index.html#" style="color: rgb(73, 45, 10);"> DecoSpace</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                    <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <div class="col ps-lg-5 ps-0 pt-3 pt-lg-1  ">
+                                    <form class="d-flex input-group w-auto mx-0 p-0">
+                                        <span class="input-group-text border-end-0 bg-light" id="search-addon">
+                        <a href="#inp"><i class="bi bi-search bg-opacity-10 "></i></a>
+                      </span>
+                                        <input id="inp" type="search" class="form-control border-start-0" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                                    </form>
+                                </div>
+                            </li>
+    
+    
+                        </ul>
+                        <!--bell de notifications-->
+                        <div class=" pe-lg-5   pt-2 ">
+                            <div class="dropdown p-0  ">
+                                <button class="btn p-0 position-relative " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell-fill"></i>
+                             <span class="position-absolute  p-0 top-0 start-100 translate-middle p-1 bg border border-light rounded-circle badge ">
+                              <div class="nbr overflow-visible">5</div>
+                             </span>
+                             
+                           </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <p class="text-muted">Our news</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <p class="text-muted">your fav sofa is in stock</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <p class="text-muted">Djo like your comment </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+    
+                        </div>
+                        <!--dropdown prfile-->
+                        <div class="dropdown px-3 ms-3 align-content-center">
+                            <a class="btn " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="position-absolute top-50 start-0 translate-middle p-1 bg1 border border-light rounded-circle badge ">
+                      <img src="photos/user-img.jpg" class="rounded-circle" height="25" loading="lazy" />
+                     </span>
+                                <div class="p-2 fw-bolder"> Hi,Sarah <i class="bi bi-caret-down-fill" style="color: black;"></i></div>
+    
+    
+                            </a>
+    
+                            <ul class="dropdown-menu list-group-flush bg-light" aria-labelledby="dropdownMenuLink">
+                                <li class="list-group-item list-group-item-action bg-light my-1 "> <i class="bi bi-person-circle me-4" style="color: rgb(110, 89, 63);"></i> <a href="http://127.0.0.1:5500/indexp.html" class="text-decoration-none" style="color: rgb(110, 89, 63);"> Profile</a> </li>
+                                <li class=" list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-heart-fill me-4" style="color: rgb(110, 89, 63);"></i> <a href="http://127.0.0.1:5500/index.html" class="text-decoration-none" style="color: rgb(110, 89, 63);">Favorite</a> </li>
+                                <li class="list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-handbag-fill me-3" style="color: rgb(110, 89, 63);"></i> <a href="#" class="text-decoration-none" style="color: rgb(110, 89, 63);"> Purchases</a> </li>
+    
+                                <li class="list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-gear-wide-connected me-4" style="color: rgb(110, 89, 63);"></i> <a href="http://127.0.0.1:5500/indexs.html" class="text-decoration-none" style="color: rgb(110, 89, 63);"> Settings</a></li>
+                                <li class="list-group-item list-group-item-action bg-light my-3 "> <i class="bi bi-box-arrow-right me-4" style="color: rgb(110, 89, 63);"></i> <a href="#" class="text-decoration-none" style="color: rgb(110, 89, 63);"> logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--fin navigation bar-->
+    
+    
+    
+        <!--content of the page-->
+        <div class="px-lg-5  px-sm-0 content1 align-content-center ">
+            <div class="container rounded-3 h-100" style="background-color:#d9c9ba49 ;">
+                <div class=" ">
+                    <h2 class="text-center mt-2 pt-3">Favorite</h2>
+                </div>
+                <!--la liste des favorie-->
+                <div class="container-fluid align-content-center pb-5">
+    
+                    <div id="row1" class="row ml-5">
+                        <!-- <div class="col-md-2 ml-lg-5 mb-5 mx-lg-4 mx-md-2">
+    
+                            <div class="icons m-3">
+                                <i class="bi bi-heart-fill "></i>
+                            </div>
+                            <img src="/58f37330a4fa116215a923fc.png" alt="">
+                            <div class="disc mt-lg-4">
+                                <h5>table</h5>
+                                <h6>wooden table</h6>
+                                <h6><span style="color:green;">180$ </span><span style="text-decoration:line-through;">500$</span>
+                                </h6>
+                                <div class="start">
+                                    <span style="color:yellow;">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i></span>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <h6 style="margin-left:10px; display: inline-block;">(512)</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 ml-5  mb-5 mx-lg-4 mx-md-2">
+    
+                            <div class="icons opacity-100 m-3">
+                                <i class="bi bi-heart-fill"></i>
+    
+                            </div>
+                            <img src="/5a01961f7ca233f48ba6273d.png" alt="">
+                            <div class="disc mt-lg-4">
+                                <h5>storage</h5>
+                                <h6> wooden storage </h6>
+                                <h6><span style="color:green;">410$ </span><span style="text-decoration: line-through;">500$</span</h6>
+                                <div class="start">
+                                  <span style="color:yellow;">
+                                    <i class="bi bi-star-fill"></i></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i> </span>
+                                    <h6 style="margin-left:10px; display: inline-block;">(50)</h6>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2 ml-5  mb-5 mx-lg-4 mx-md-2">
+    
+                        <div class="icons opacity-100 m-3">
+                            <i class="bi bi-heart-fill"></i>
+    
+                        </div>
+                        <img src="/5a1ccb9523e3c9.png" alt="">
+                        <div class="disc mt-4">
+                            <h5>chair</h5>
+                            <h6>LCD chair</h6>
+                            <h6><span style="color:green;">180$ </span><span style="text-decoration: line-through;">500$</span>
+                            </h6>
+                            <div class="start">
+                                <span style="color:yellow;"><i class="bi bi-star-fill"></i></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i></span>
+                                <i class="bi bi-star"></i>
+                                <h6 style="margin-left:10px; display: inline-block;">(150)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ml-5  mb-5 mx-lg-4 mx-md-2"> 
+    
+                        <div class="icons opacity-100 m-3">
+                            <i class="bi bi-heart-fill"></i>
+    
+                        </div>
+                        <img src="/kisspng-couch-mid-century-modern-tufting-loveseat-modern-f-5b1765c6f0eaf1.9548092115282600389868.png" alt="">
+                        <div class="disc mt-lg-4 ">
+                            <h5>sofa</h5>
+                            <h6>gray sofa</h6>
+                            <h6><span style="color:green;">730$ </span><span style="text-decoration: line-through;">960$</span>
+                            </h6>
+                            <div class="start">
+                                <span style="color:yellow;"><i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i></span>
+                                <h6 style="margin-left:10px; display: inline-block;">(200)</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                    </div>
+                </div>
+    
+                <!-- <div class="container-fluid align-content-center pt-5 pb-5">
+    
+                <div id="row1" class="row ml-5 ">
+                    <div class="col-md-2 ml-lg-5 mb-5 mx-lg-4 mx-md-2">
+    
+                        <div class="icons opacity-100 m-3">
+                            <i class="bi bi-heart-fill"></i>
+    
+                        </div>
+                        <img src="/58e9002beb97430e819064d3.png" alt="">
+                        <div class="disc mt-lg-4">
+                            <h5>table</h5>
+                            <h6>wooden table</h6>
+                            <h6><span style="color:green;">180$ </span><span style="text-decoration:line-through;">800$</span>
+                            </h6>
+                            <div class="start">
+                                <span style="color:yellow;">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i></span>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <h6 style="margin-left:10px; display: inline-block;">(150)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ml-5 mb-5 mx-lg-4 mx-md-2">
+    
+                        <div class="icons opacity-100 m-3">
+                            <i class="bi bi-heart-fill"></i>
+    
+                        </div>
+                        <img src="/580b57fcd9996e24bc43c283.png" alt="">
+                        <div class="disc mt-lg-4">
+                            <h5>table</h5>
+                            <h6> iron table </h6>
+                            <h6><span style="color:green;">410$ </span><span style="text-decoration: line-through;">500$</span</h6>
+                              <div class="start">
+                                <span style="color:yellow;"><i class="bi bi-star-fill"></i></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i> </span>
+                                <h6 style="margin-left:10px; display: inline-block;">(150)</h6>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-2 ml-5 mb-5 mx-lg-4 mx-md-2">
+    
+                    <div class="icons opacity-100 m-3">
+                        <i class="bi bi-heart-fill"></i>
+    
+                    </div>
+                    <img src="/580b57fcd9996e24bc43c24a.png" alt="">
+                    <div class="disc mt-lg-4">
+                        <h5>chair</h5>
+                        <h6>yellow LCD chair</h6>
+                        <h6><span style="color:green;">50$ </span><span style="text-decoration: line-through;">100$</span>
+                        </h6>
+                        <div class="start">
+                            <span style="color:yellow;"><i class="bi bi-star-fill"></i></i>
+                            <i class="bi bi-star-fill"></i></span>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <h6 style="margin-left:10px; display: inline-block;">(176)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 ml-5 mb-5 mx-lg-4 mx-md-2">
+    
+                    <div class="icons  opacity-100 m-3">
+                        <i class="bi bi-heart-fill"></i>
+    
+                    </div>
+                    <img src="/580b57fcd9996e24bc43c247.png" alt="">
+                    <div class="disc mt-lg-4">
+                        <h5>sofa</h5>
+                        <h6>royal sofa</h6>
+                        <h6><span style="color:green;">730$ </span><span style="text-decoration: line-through;">960$</span>
+                        </h6>
+                        <div class="start">
+                            <span style="color:yellow;"><i class="bi bi-star-fill"></i></span>
+                            <i class="bi  bi-star-fill"></i>
+                            <i class="bi  bi-star-fill"></i></span>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <h6 style="margin-left:10px; display: inline-block;">(20)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+            </div>
+            <!--fin de la liste-->
+    
+    
+            <!--
+        <div class="col-md-2 ml-lg-5 mb-5 mx-lg-4 mx-md-2">
+    
+            <div class="icons m-3">
+                <i class="bi bi-heart-fill "></i>
+            </div>
+            <img src="/58f37330a4fa116215a923fc.png" alt="">
+            <div class="disc mt-lg-4">
+                <h5>table</h5>
+                <h6>wooden table</h6>
+                <h6><span style="color:green;">180$ </span><span style="text-decoration:line-through;">500$</span>
+                </h6>
+            </div>
+        </div>
+    -->
+            <script>
+                const listElement = [];
+                const listbtn_R = [];
+                for (let index = 0; index < localStorage.getItem("length"); index++) {
+                    listElement[index] = null;
+                    listbtn_R[index] = null;
+                }
+                for (let index = 0; index < localStorage.getItem("length"); index++) {
+    
+                    if (index == localStorage.getItem("Red-B" + index)) {
+                        const newElement = document.createElement("div");
+                        newElement.classList.add('col-md-2');
+                        newElement.classList.add('ml-lg-5');
+                        newElement.classList.add('mb-5');
+                        newElement.classList.add('mx-lg-4');
+                        newElement.classList.add('mx-md-2');
+                        listElement[index] = newElement;
+    
+    
+                        const newIcon = document.createElement("div");
+                        newIcon.classList.add('icons');
+                        newIcon.classList.add('m-3');
+    
+    
+                        const Icon = document.createElement("i");
+                        Icon.classList.add('bi');
+                        Icon.classList.add('bi-heart-fill');
+                        Icon.style.cursor = "pointer";
+                        Icon.style.color = "red";
+                        listbtn_R[index] = Icon;
+    
+    
+                        const Img = document.createElement("img");
+                        Img.src = localStorage.getItem("ImgS" + index);
+    
+    
+                        const newElement_1 = document.createElement("div");
+                        newElement.classList.add('disc');
+                        newElement.classList.add('mt-lg-4');
+                        const titleH5 = document.createElement('h5');
+                        const titleH5Texte = document.createTextNode(localStorage.getItem("Type" + index));
+                        const titleH6 = document.createElement('h6');
+                        const titleH6Texte = document.createTextNode(localStorage.getItem("SType" + index));
+    
+    
+                        const price = document.createElement('h6');
+                        const spanNewPrice = document.createElement('span');
+                        spanNewPrice.style.color = "green";
+                        const spanNewPriceT = document.createTextNode(localStorage.getItem("NewP" + index));
+                        const spanOldPrice = document.createElement('span');
+                        spanOldPrice.style.textDecoration = "line-through";
+                        const spanOldPriceT = document.createTextNode(localStorage.getItem("OldP" + index));
+    
+    
+    
+                        document.getElementById("row1").appendChild(newElement);
+                        newElement.appendChild(newIcon);
+                        newElement.appendChild(Img);
+                        newElement.appendChild(newElement_1);
+                        /* Icon*/
+                        newIcon.appendChild(Icon);
+                        /*Icon end */
+                        /*titleH5*/
+                        newElement_1.appendChild(titleH5);
+                        titleH5.appendChild(titleH5Texte);
+                        /*titleH5 end */
+                        /*titleH6 */
+                        newElement_1.appendChild(titleH6);
+                        titleH6.appendChild(titleH6Texte);
+                        /*titleH6 end */
+                        newElement_1.appendChild(price);
+                        /*spanNewPrice */
+                        price.appendChild(spanNewPrice);
+                        spanNewPrice.appendChild(spanNewPriceT);
+                        /*spanNewPrice end */
+                        /*spanOldPrice */
+                        price.appendChild(spanOldPrice);
+                        spanOldPrice.appendChild(spanOldPriceT);
+                        /*spanOldPrice end*/
+                    }
+                }
+                for (let index = 0; index < localStorage.getItem("length"); index++) {
+                    if (listbtn_R[index] != null) {
+                        listbtn_R[index].addEventListener("click", Remove);
+    
+                        function Remove() {
+                            document.getElementById("row1").removeChild(listElement[index]);
+                            localStorage.removeItem("Red-B" + index);
+                            localStorage.setItem("Remove-R" + index, index);
+                        }
+                    }
+                }
+            </script>
+    
+    
+    
+            <script src="main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
+
+  
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

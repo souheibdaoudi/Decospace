@@ -1,0 +1,367 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: linear all .4s;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    color: #402e40;
+}
+body{
+    flex-wrap: wrap;
+}
+.categories{
+    margin: 20px;
+    display: flex;
+}
+.categories-content{
+    box-sizing: border-box;
+    flex-basis: 74.7%;
+    display: flex;
+    flex-direction: column;
+}
+.draw-bar{
+    width: 5px;
+    position: fixed;
+    right:24.5% ;
+    height: 95vh;
+    margin: 0 10px;
+    background: #402e40;
+    border-radius: 5px;
+    display: block;
+    background-position: center;
+}
+.categories-information{
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.title-bar{
+    flex-basis: 12%;
+    padding: 20px;
+}
+.title-bar h1{
+    display: inline;
+    padding: 30px;
+    margin: 25px;
+}
+.content-box {
+    flex-basis: 88%;
+}
+.content-box h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.list-content{
+    margin: 20px 0;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element{
+    height: 400px;
+    width: 300px;
+    margin: 25px 10px;
+}
+.element h6{
+    margin-top: 4px;
+    color: #864218;
+}
+.element span{
+    display: inline;
+    font-size:11px;
+    font-weight: bold;
+    margin-right: 40px;
+    position: relative;
+    top: 15px;
+    left: 0;
+}
+#newPrice{
+    color: #74dd5b;
+}
+#oldPrice{
+    color: #707070;
+}
+.img{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+    overflow:hidden ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.img button{
+     z-index: 2;
+     width: 50%;
+     box-sizing: border-box;
+     padding: 10px 20px;
+     margin: 10px 0;
+     border-radius: 20px;
+     background: #74dd5b;
+     border: none;
+     text-align: left;
+     font-size: 16px;
+     font-weight: bold;
+     cursor: pointer;
+     position: relative;
+     top: 150px;
+     opacity: 0;
+}
+.img:hover button{
+    top: 0;
+    opacity: 1;
+}
+.img button:hover,.calc-TotalPrice button:hover{
+    text-shadow: 1px 1px 2px #402e40;
+}
+.categories-information ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+       margin: 8%;
+       
+}
+.categories-information ul li{
+    list-style: none;
+    display: block;
+    width: 100%;
+    padding: 2.5% 2.5% 4% 2.5%;
+    margin: 3%;
+    border-radius: 10px;
+    background: #c9ab98;
+    line-height: 40px;
+}
+#img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    position: relative;
+    top:8px;
+}
+.categories-information ul li h3{
+     padding-left: 4%;
+}
+.categories-information ul li span{
+    font-size: small;
+    font-weight: bold;
+}
+.categories-information ul li span img{
+    width: 25px;
+    height: 25px;
+    margin-right: 6%;
+}
+.icon{
+    display:none;
+}
+.icon-home{
+    display:inline-block;
+    height: 50px;
+    width: 50px;
+    background: #c9ab98;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left :78%;
+}
+.fa-home{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.calc-TotalPrice{
+    position: relative;
+    width: 50%;
+    left: 0px;
+    bottom: 0px;
+    line-height: 40px;
+}
+.calc-TotalPrice h5{
+       display: inline-block;
+       font-weight: 900;
+}
+.calc-TotalPrice span{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 150px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.calc-TotalPrice h3{
+     display: inline-block;
+     margin-top: 10px;
+}
+#Taxes,#taxes_1{
+
+    font-weight: 600;
+    margin-left: 3%;
+}
+#total-price, #total_price_1{
+    position: relative;
+    top:0;
+    left: 20%;
+}
+.calc-TotalPrice button{
+    padding: 10px 20px;
+    background: #74dd5b;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    cursor: pointer;   
+}
+.icon-menu{
+    display: none;
+}
+#categories-information{
+    display: none;
+}
+@media (max-width:1000px),(max-height:3000px) {
+    #categories-information{
+        display: inline-block;
+    }
+    .categories-information{
+        background: white;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        right:-150% ;
+        transition: 1s;
+    }
+    .icon{
+        display:inline-block;
+        height: 50px;
+        width: 50px;
+        background: #c9ab98;
+        border-radius: 50%;
+        position: relative;
+        top: 15px;
+        left :2.5%;
+        cursor: pointer;
+    }
+    .icon-home{
+        float: right;
+        height: 50px;
+        width: 50px;
+        background: #c9ab98;
+        border-radius: 50%;
+        position: relative;
+        top: 15px;
+        left: -3%;
+    }
+    .fa-times{
+        color: white;
+        font-size: 35px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .categories-information ul{
+         margin: 20px;
+    }
+    .calc-TotalPrice{
+        top: 80%;
+        position: absolute;
+        width: 50%;
+        left:75%;
+        
+        line-height: 25px;
+        transform: translateX(-165px);
+    }
+    .categories-information ul li{
+        width: 100%;
+        padding: 5px 10px 10px 10px;
+        margin: 10px;
+        border-radius: 10px;
+        line-height: 30px;
+    }
+    .calc-TotalPrice h3{
+        margin-top:1%;
+    }
+    .calc-TotalPrice button{
+       top: 4px;
+       left: 80px;
+    }
+    .draw-bar{
+        display: none;
+    }
+    .categories-content{
+        flex-basis: 100%;
+    }
+    .list-content{
+        justify-content: center;
+    }
+    .element{
+        height: 300px;
+        width: 200px;
+        margin:20px;
+    }
+    .icon-menu{
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background: #c9ab98;
+        border-radius: 25%;
+        position: fixed;
+        top: 25px;
+        right: -10px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    .fa-shopping-cart{
+        color: white;
+        font-size: 25px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .img button{
+        width: 70%;
+    }
+}
+@media (max-width:540px) {
+    .element{
+        width: 100%;
+        height: 400px;
+    }
+    .img button{
+        width: 50%;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media (max-width:700px) {
+    .title-bar h1{
+        display: inline;
+        padding: 25px;
+        margin: 0;
+    }
+}
